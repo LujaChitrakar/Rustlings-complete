@@ -1,7 +1,6 @@
 fn animal_habitat(animal: &str) -> &str {
     // TODO: Fix the compiler error in the statement below.
-    let identifier = 
-    if animal == "crab" {
+    let identifier = if animal == "crab" {
         1
     } else if animal == "gopher" {
         2

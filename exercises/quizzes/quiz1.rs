@@ -12,13 +12,13 @@
 // the quantity bought.
 // fn calculate_price_of_apples(???) -> ??? { ??? }
 
-fn calculate_price_of_apples(no_of_apple:u64)->u64{
-    let mut cost_of_one_apple=2;
-    let mut total_cost=no_of_apple*cost_of_one_apple;
-    
-    if no_of_apple>40{
-        cost_of_one_apple-=1;
-        total_cost=no_of_apple*cost_of_one_apple;
+fn calculate_price_of_apples(no_of_apple: u64) -> u64 {
+    let mut cost_of_one_apple = 2;
+    let mut total_cost = no_of_apple * cost_of_one_apple;
+
+    if no_of_apple > 40 {
+        cost_of_one_apple -= 1;
+        total_cost = no_of_apple * cost_of_one_apple;
     }
     total_cost
 }
