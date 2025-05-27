@@ -45,6 +45,7 @@ impl PositiveNonzeroInteger {
         // when `parse()` returns an error.
         let x: i64 = s.parse().map_err(ParsePosNonzeroError::from_parse_int)?;
         PositiveNonzeroInteger::new(x).map_err(ParsePosNonzeroError::from_creation)
+        // finish
     }
 }
 
