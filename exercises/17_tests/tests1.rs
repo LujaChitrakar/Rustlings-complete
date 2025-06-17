@@ -15,7 +15,6 @@ mod tests {
     // the outer module.
 
     use crate::is_even;
-  
 
     #[test]
     fn you_can_assert() {

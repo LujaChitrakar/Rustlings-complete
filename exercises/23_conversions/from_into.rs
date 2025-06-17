@@ -35,24 +35,24 @@ impl Default for Person {
 // 6. If parsing the age fails, return the default of `Person`.
 impl From<&str> for Person {
     fn from(s: &str) -> Self {
-        let splitted:Vec<&str>=s.split(",").collect();
-    
-        if splitted.len()!=2{
-           return Default::default();
-        }
-        let name=splitted[0].trim();
-        let age=splitted[1].trim();
+        let splitted: Vec<&str> = s.split(",").collect();
 
-        if name.len()==0{
-           return  Default::default();
+        if splitted.len() != 2 {
+            return Default::default();
+        }
+        let name = splitted[0].trim();
+        let age = splitted[1].trim();
+
+        if name.len() == 0 {
+            return Default::default();
         }
 
-        if let Ok(age) =age.parse::<u8>(){
-            Self{
-                name:name.to_string(),
-                age:age
+        if let Ok(age) = age.parse::<u8>() {
+            Self {
+                name: name.to_string(),
+                age: age,
             }
-        }else {
+        } else {
             return Default::default();
         }
     }

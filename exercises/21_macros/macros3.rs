@@ -10,5 +10,5 @@ pub mod macros {
 }
 
 fn main() {
-     my_macro!();
+    my_macro!();
 }

@@ -6,8 +6,8 @@ trait AppendBar {
 
 impl AppendBar for String {
     // TODO: Implement `AppendBar` for the type `String`.
-    fn append_bar(self:String) ->String {
-        String::from(self+"Bar")
+    fn append_bar(self: String) -> String {
+        String::from(self + "Bar")
     }
 }
 

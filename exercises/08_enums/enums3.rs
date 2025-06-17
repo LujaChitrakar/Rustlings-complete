@@ -47,11 +47,11 @@ impl State {
         // TODO: Create a match expression to process the different message
         // variants using the methods defined above.
         match message {
-            Message::Resize { width, height }=>self.resize(width, height),
-            Message::Echo(text)=>self.echo(text),
-            Message::ChangeColor(red,blue ,green )=>self.change_color(red, blue, green),
-            Message::Move(point)=>self.move_position(point),
-            Message::Quit=>self.quit(),
+            Message::Resize { width, height } => self.resize(width, height),
+            Message::Echo(text) => self.echo(text),
+            Message::ChangeColor(red, blue, green) => self.change_color(red, blue, green),
+            Message::Move(point) => self.move_position(point),
+            Message::Quit => self.quit(),
         }
     }
 }
